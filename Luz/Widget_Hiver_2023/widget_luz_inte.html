@@ -1,0 +1,79 @@
+<section class="npy_widget_luz" id="npy-widget-luz">
+  <div class="npy_widget_luz_closer" id="npy-widget-luz-closer"><img src="https://snow.n-py.com/Widgets/Luz/Hiver_2023/img/icon-close-white.png" alt="" /></div>
+  <div class="npy_widget_luz_opener_desktop" id="npy-widget-luz-opener-desktop"><img src="https://snow.n-py.com/Widgets/Luz/Hiver_2023/img/icon-arrow-bottom-gold.png" alt="" /></div>
+
+  <div class="npy_widget_title" id="npy-widget-luz-title">
+    <div class="npy_widget_icon"><img src="https://snow.n-py.com/Widgets/Luz/Hiver_2023/img/icon-ticket-white.png" alt="" /></div>
+    <div>
+      <h2>Forfaits de ski</h2>
+      <p>Vous êtes presque sur les pistes</p>
+    </div>
+  </div>
+  <div class="npy_widget_body">
+    <div class="npy_widget_forfaits npy_widget_sector active" id="ff-sector">
+      <!-- Forfaits - saisie des détails -->
+      <div class="wid_ff npy_widget_forfaits__details active" id="ff-details">
+        <div class="npy_widget_forfaits__details_form">
+          <div id="ff-input-duration-container" class="popover_trigger" data-popover="duration-popover">
+            <span><img src="https://snow.n-py.com/Widgets/Luz/Hiver_2023/img/icon-hourglass-black.png" alt="" /></span>
+            <p><span id="duration-label">1 jour</span></p>
+            <div class="popover" id="duration-popover">
+              <ul>
+                <li class="widget_choice" data-duration="1" data-vc="1DAYZE">1 jour</li>
+                <li class="widget_choice" data-duration="2" data-vc="2DAY">2 jours</li>
+                <li class="widget_choice" data-duration="3" data-vc="3DAY">3 jours</li>
+                <li class="widget_choice" data-duration="4" data-vc="4DAY">4 jours</li>
+                <li class="widget_choice" data-duration="5" data-vc="5DAY">5 jours</li>
+                <li class="widget_choice" data-duration="6" data-vc="6DAY">6 jours</li>
+                <li class="widget_choice" data-duration="7" data-vc="7DAY">7 jours</li>
+              </ul>
+
+              <a class="npy_widget__sec_link" href="https://www.n-py.com/fr/luz/forfaits-ski?utm_source=luz.com&utm_medium=referral&utm_campaign=widget_station_luz_forfaits"> Les autres forfaits</a>
+            </div>
+          </div>
+
+          <div id="ff-input-skiers-container" class="popover_trigger" data-popover="skiers-popover">
+            <span><img src="https://snow.n-py.com/Widgets/Luz/Hiver_2023/img/icon-user-black.png" alt="" /></span>
+            <p><span id="skiers-label">1</span> Skieur(s)</p>
+            <div class="popover" id="skiers-popover">
+              <div class="skiers_popover_adult">
+                <div class="popover_label">Adultes</div>
+                <div class="popover_count">
+                  <span id="adult-moins" class="remove">-</span>
+                  <span id="adult-score" class="score">1</span>
+                  <span id="adult-plus" class="add">+</span>
+                </div>
+              </div>
+              <div class="skiers_popover_child">
+                <div class="popover_label">Enfants</div>
+                <div class="popover_count">
+                  <span id="child-moins" class="remove">-</span>
+                  <span id="child-score" class="score">0</span>
+                  <span id="child-plus" class="add">+</span>
+                </div>
+              </div>
+              <div class="skiers_popover_stud">
+                <div class="popover_label">Étudiants</div>
+                <div class="popover_count">
+                  <span id="stud-moins" class="remove">-</span>
+                  <span id="stud-score" class="score">0</span>
+                  <span id="stud-plus" class="add">+</span>
+                </div>
+              </div>
+              <div class="skiers_popover_valid widget_choice" id="skiers-popover-valid">Valider</div>
+            </div>
+          </div>
+          <div id="ff-input-date-container" class="popover_trigger">
+            <input id="ff-datepicker" type="date" data-after="Premier jour" min="2023-12-02" max="2024-03-24" />
+            <img src="https://snow.n-py.com/Widgets/Luz/Hiver_2023/img/icon-calendar-black.png" />
+          </div>
+
+          <button class="npy_widget__main_link wid_ff_btn" id="widget-details-confirm">Confirmer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://snow.n-py.com/Widgets/Luz/Hiver_2023/npy_widget_luz.js"></script>
+<link rel="stylesheet" href="https://snow.n-py.com/Widgets/Luz/Hiver_2023/widget_luz.css" />
