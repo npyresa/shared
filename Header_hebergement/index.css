@@ -180,6 +180,12 @@ header button {
   transition: all 0.3s ease-in-out;
 }
 
+@media screen and (max-width: 768px) {
+  header button {
+    display: none;
+  }
+}
+
 header.minimized button {
   font-size: 14px;
   padding: 10px 14px;
@@ -369,4 +375,18 @@ main {
 footer {
   background-color: #003d7b;
   height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  header button {
+    display: none;
+  }
+
+  .results_map {
+    display: none;
+  }
+
+  .results_filters {
+    display: none;
+  }
 }
