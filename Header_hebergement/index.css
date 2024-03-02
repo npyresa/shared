@@ -1,0 +1,372 @@
+/* reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Poppins';
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: #fff;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  position: fixed;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 99;
+}
+
+header.minimized {
+  height: 50px;
+  box-shadow: none;
+  border-bottom: 1px solid var(--lightblue);
+}
+
+header.hidden {
+  transform: translateY(-100%);
+}
+
+header i {
+  color: var(--darkblue);
+  font-size: 20px;
+  transform: translateY(5px);
+  margin-right: 10px;
+  display: inline-block;
+}
+
+header button {
+  background: var(--orange);
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: white;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  font-weight: 700;
+  font-family: 'Poppins';
+  transition: all 0.3s ease-in-out;
+}
+
+header.minimized button {
+  font-size: 14px;
+  padding: 10px 14px;
+}
+
+main {
+  margin-top: 50px;
+
+  padding: 200px 0;
+}
+
+.widget_recherche {
+  width: 800px;
+  margin: 0 auto 50px auto;
+  height: 50px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: var(--shadow);
+}
+
+.widget_recherche.sticky {
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  border-top: 1px solid var(--lightblue);
+  border-bottom: 1px solid var(--lightblue);
+  border-radius: 0;
+  box-shadow: rgba(121, 168, 216, 0.22) 0px 15px 16px;
+}
+
+.widget_recherche.scrollup {
+  transform: translateY(50px);
+}
+
+/* Resultats - filtres */
+.results_filters {
+  background: #fff;
+  border-right: 1px solid var(--lightblue);
+  height: 100vh;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.results_filters h3 {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.results_filters ul {
+  margin-top: 30px;
+}
+
+.results_filters ul li {
+  padding: 8px 0px;
+}
+
+.results_filters .results_filters_list {
+  display: none;
+}
+
+.results_filters.open .results_filters_list {
+  display: block;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 30px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+.results.lockedontop .results_filters {
+  position: sticky;
+  top: 50px;
+}
+
+/* Resultats - liste */
+
+.results_list {
+  width: 100%;
+  margin: 0px 24px;
+  max-width: 600px;
+}
+
+/* Resultats - carte */
+.results_map {
+  width: 55%;
+}
+
+.results.lockedontop .results_map {
+  position: sticky;
+  top: 50px;
+}
+
+.results_map {
+  width: 50%;
+  height: 100vh;
+  background: green;
+}
+
+.result {
+  background: white;
+  padding: 0;
+  margin: 20px 0;
+  box-shadow: var(--shadowlarge);
+  border-radius: 15px;
+  display: flex;
+  margin: 15px 0px;
+  overflow: hidden;
+}
+
+.result_img {
+  width: 60%;
+  overflow: hidden;
+}
+
+.result_img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.result_text {
+  padding: 24px;
+}
+
+.result_text h3 {
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.result_recap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.result_number {
+  background: aliceblue;
+  padding: 5px;
+}
+
+.result_localisation_resort,
+.result_localisation_distance {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.result_localisation_resort i,
+.result_localisation_distance i {
+  display: inline-block;
+  transform: translateY(2px);
+  margin-right: 5px;
+}
+
+.result_showdates {
+  margin-top: 24px;
+  background: aliceblue;
+  padding: 20px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Texte sous la recherche */
+
+.bottom_text {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+/* Footer */
+
+footer {
+  background-color: #003d7b;
+  height: 500px;
+}
