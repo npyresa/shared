@@ -1,6 +1,0 @@
-<svg id="calendar_1_" data-name="calendar (1)" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-  <path id="Tracé_324" data-name="Tracé 324" d="M13.458,1.417H12.75V.708a.708.708,0,0,0-1.417,0v.708H5.667V.708a.708.708,0,1,0-1.417,0v.708H3.542A3.546,3.546,0,0,0,0,4.958v8.5A3.546,3.546,0,0,0,3.542,17h9.917A3.546,3.546,0,0,0,17,13.458v-8.5A3.546,3.546,0,0,0,13.458,1.417ZM1.417,4.958A2.125,2.125,0,0,1,3.542,2.833h9.917a2.125,2.125,0,0,1,2.125,2.125v.708H1.417ZM13.458,15.583H3.542a2.125,2.125,0,0,1-2.125-2.125V7.083H15.583v6.375A2.125,2.125,0,0,1,13.458,15.583Z" transform="translate(0 0)" fill="#002f6c"/>
-  <circle id="Ellipse_171" data-name="Ellipse 171" cx="1.063" cy="1.063" r="1.063" transform="translate(7.438 9.563)" fill="#002f6c"/>
-  <circle id="Ellipse_172" data-name="Ellipse 172" cx="1.063" cy="1.063" r="1.063" transform="translate(3.896 9.563)" fill="#002f6c"/>
-  <circle id="Ellipse_173" data-name="Ellipse 173" cx="1.063" cy="1.063" r="1.063" transform="translate(10.979 9.563)" fill="#002f6c"/>
-</svg>
